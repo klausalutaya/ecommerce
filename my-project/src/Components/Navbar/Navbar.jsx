@@ -15,16 +15,16 @@ const Navbar = () => {
 
   return (
     <div className=" lg:py- lg:px-[40px] xl:py-[5px] xl:px-[50px] flex items-center justify-between mx-auto mt-5 mb-5 ">
-      <div className="flex items-center justify-center gap-2 ml-[80px] xl:ml-0 lg:ml-0 ">
-        <img className=" xl:w-[40px] lg:w-[30px]" src={logo} alt="Logo" />
-        <p className="text-[35px]  xl:text-[28px]   lg:text-[24px]  font-open-sans font-bold mt-2">
+      <div className="flex items-center justify-center gap-2 ml-[80px] xl:ml-0 lg:ml-0 sm:px-[5px] sm:ml-0">
+        <img className=" xl:w-[40px] lg:w-[30px] sm:w-[28px]" src={logo} alt="Logo" />
+        <p className="text-[35px]  xl:text-[28px]   lg:text-[24px] sm:text-[22px]  font-open-sans font-bold mt-2">
           SHOPPER
         </p>
       </div>
       <ul
-        className={`xl:px-[60px] xl:gap-[40px] lg:gap-[30px] flex gap-[60px] text-[25px] xl:text-[25px] lg:text-[23px]  md:flex-col md:h-auto md:absolute md:top-[90px] md:w-[40%] 
-        md:bg-white md:left-[450px] md:shadow-lg md:p-4 md:rounded-lg md:gap-[20px] transition-all duration-300  ${
-          isMenuOpen ? "md:flex" : "md:hidden"
+        className={`xl:px-[60px] xl:gap-[40px] lg:gap-[30px] flex gap-[60px] text-[25px] xl:text-[25px] lg:text-[23px]  md:flex-col md:h-auto md:absolute md:top-[90px] md:w-[40%]  sm:flex-col sm:h-auto sm:absolute sm:top-[80px] sm:w-[20%] 
+        md:bg-white md:left-[450px] sm:left-[450px] sm:bg-white sm:shadow-lg md:shadow-lg md:p-4 md:rounded-lg md:gap-[20px] transition-all duration-300  ${
+          isMenuOpen ? "md:flex sm:flex" : "md:hidden sm:hidden"
         }`}
       >
         <li
@@ -64,7 +64,7 @@ const Navbar = () => {
         </div>
         {/* Hamburger button */}
         <button
-          className={`group w-12 h-12 items-center justify-center rounded transition bg-white text-slate-800 hidden md:flex ${
+          className={`group w-12 h-12 items-center justify-center rounded transition bg-white text-slate-800 hidden md:flex sm:flex ${
             isMenuOpen ? "aria-pressed" : ""
           }`}
           onClick={toggleMenu}
