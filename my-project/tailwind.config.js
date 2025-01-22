@@ -5,6 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    // Screens directly under theme to override defaults
+    screens: {
+      '2xl': {'max': '1535px'},
+      'xl': {'max': '1280px'},
+      'lg': {'max': '1024px'},
+      'md': {'max': '800px'},
+      'sm': {'max': '500px'},
+    },
+    // Extend for adding new utilities without overriding defaults
     extend: {
       fontFamily: {
         'oswald-light': ['Oswald-Light'],
@@ -16,14 +25,7 @@ export default {
         'eurostile-black': ['Eurostile-Black'],
         'eurostile-extendedblack': ['Eurostile-ExtendedBlack'],
         'open-sans': ['Open Sans-Regular'],
-      },
-      screens: {
-        'xl': { 'min': '1025px', 'max': '1280px' }, // For screens between 1025px and 1280px
-        'lg': { 'min': '801px', 'max': '1024px' },  // For screens between 801px and 1024px
-        'md': { 'min': '501px', 'max': '800px' },   // For screens between 501px and 800px
-        'sm': { 'max': '500px' },                   // For screens up to 500px
-      },
-      
+      }
     },
   },
   plugins: [],
