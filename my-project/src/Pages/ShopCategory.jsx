@@ -18,7 +18,7 @@ const ShopCategory = (props) => {
            <img src={drop_down} alt="" />
         </div>
       </div>
-      <div className="2xl:gap-0 shopcategory-prodcuts grid grid-cols-4 gap-[60px] my-[15px] mx-[140px]">
+      <div className="2xl:gap-0 shopcategory-prodcuts grid grid-cols-4 gap-[60px] my-[15px] mx-[140px] sm:grid-cols-2 sm:gap-2 sm:mx-[20px] sm:my-0">
         {all_product.map((item,i) =>{
           if (props.category===item.category) {
               return <Item key={i} id={item.id} name={item.name} image={item.image} new_price={item.new_price} old_price={item.old_price}/>

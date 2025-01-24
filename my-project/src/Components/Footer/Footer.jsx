@@ -8,9 +8,9 @@ const Footer = () => {
     <div className=''>
       <div className='flex justify-center items-center mb-[30px] gap-2'>
         <img className='w-[80px]' src={footer_logo} alt="" />
-        <p className='text-[35px]'>SHOPPER</p>
+        <p className='text-[35px] sm:text-[30px]'>SHOPPER</p>
       </div>
-      <ul className='flex gap-[30px] justify-center items-center mb-[30px] font-eurostile-black'>
+      <ul className='flex gap-[30px] sm:gap-[23px] justify-center items-center mb-[30px] font-eurostile-black'>
     <li>Company</li>
     <li>Products</li>
     <li>Offices</li>
@@ -29,7 +29,7 @@ const Footer = () => {
         </div>
       </div>
     
-      <div className='flex flex-col justify-center items-center'>
+      <div className='flex flex-col items-center justify-center'>
       <hr className='border-gray-500 w-[90%]  bg-[#252525] rounded-[10px]'></hr>
         <p className='mt-5'>Copyright @ 2023 - All Rights Reserved</p>
       </div>
